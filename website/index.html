@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="./css/calc.css"></link>
+        <script src="./js/calc.js"></script>
+    </head>
+    <body>
+        <div class="box">
+                <div class="display">
+                    <input type="text" readonly size="18" id="num">
+                </div>
+                <div class="keys">
+                    <div class="row">
+                        <button type="button" class="memory" onclick='read_memory()'>MRC</button>
+                        <button type="button" class="memory" onclick='clear_memory()'>M-</button>
+                        <button type="button" class="memory" onclick='store_memory()'>M+</button>
+                        <button type="button" class="sign" onclick='sign("/")'>/</button>
+                        <button type="button" class="sign" onclick='sign("√")'>√</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="number" onclick='input("7")'>7</button>
+                        <button type="button" class="number" onclick='input("8")'>8</button>
+                        <button type="button" class="number" onclick='input("9")'>9</button>
+                        <button type="button" class="sign" onclick='sign("*")'>*</button>
+                        <button type="button" class="sign" onclick='bck()'>⌫</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="number" onclick='input("4")'>4</button>
+                        <button type="button" class="number" onclick='input("5")'>5</button>
+                        <button type="button" class="number" onclick='input("6")'>6</button>
+                        <button type="button" class="sign" onclick='sign("-")'>-</button>
+                        <button type="button" class="sign" onclick='sign("π")'>π</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="number" onclick='input("1")'>1</button>
+                        <button type="button" class="number" onclick='input("2")'>2</button>
+                        <button type="button" class="number" onclick='input("3")'>3</button>
+                        <button type="button" class="sign" onclick='sign("+")'>+</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="number" onclick='input("0")'>0</button>
+                        <button type="button" class="number" onclick='input(".")'>.</button>
+                        <button type="button" class="number" onclick='clr()'>C</button>
+                        <button type="button" class="eval" onclick='eval()'>=</button>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
